@@ -18,5 +18,8 @@ RUN conda install --quiet --yes \
     'simplegeneric=0.8.1' \
     'altair=3.1.0'
 
+# install latest Juipyterlab
+RUN pip install 'jupyterlab==1.0.2'
+
 # switching back to jovyan
 USER jovyan
